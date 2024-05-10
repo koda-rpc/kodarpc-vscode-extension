@@ -1,0 +1,25 @@
+{
+  "name": "kodarpc",
+  "displayName": "KodaRPC",
+  "description": "KodaRPC Syntax Highlighting",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.89.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "koda-rpc",
+      "aliases": ["KodaRPC", "koda-rpc"],
+      "extensions": [".kodarpc"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "koda-rpc",
+      "scopeName": "source.kodarpc",
+      "path": "./syntaxes/koda-rpc.tmLanguage.json"
+    }]
+  }
+}
